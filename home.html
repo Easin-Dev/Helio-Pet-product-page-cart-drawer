@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Helio Pet Device</title>
+        <link rel="stylesheet" href="style.css" />
+        <script src="index.js" defer></script>
+    </head>
+
+    <body>
+        <!-- Navbar section -->
+        <header class="header">
+            <button class="hamburger">☰</button>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="cart-icon">
+                <img
+                    src="https://cdn-icons-png.flaticon.com/512/1170/1170678.png"
+                    alt="Cart" />
+                <span class="cart-count">0</span>
+            </div>
+        </header>
+
+        <!-- body section -->
+        <div class="container">
+            <!-- left Image section -->
+            <div class="image-section">
+                <img class="main-image"
+                    src="https://www.rongbaz.com.au/cdn/shop/files/Pepsi_adult_black.webp?v=1743120507&width=1680"
+                    alt="Helio Pet Device">
+
+                <div class="gallery">
+                    <img
+                        src="https://www.rongbaz.com.au/cdn/shop/files/Pepsi_adult_white.webp?v=1743120507&width=1100"
+                        alt="gallery1">
+                    <img
+                        src="https://www.rongbaz.com.au/cdn/shop/files/Pepsi_adult_navy.webp?v=1743120506&width=1100"
+                        alt="gallery2">
+                    <img
+                        src="https://www.rongbaz.com.au/cdn/shop/files/Pepsi_adult_black.webp?v=1743120507&width=1680"
+                        alt="gallery3">
+                </div>
+            </div>
+
+            <!-- Right Details section -->
+            <div class="details-section">
+                <div class="badge">Best Seller</div>
+                <div class="stars">★★★★★ <span class="review">4.9 (1,021
+                        reviews)</span></div>
+                <div class="title">Helio Pet Device <sup
+                        class="title-sup">TM</sup></div>
+
+                <div class="quote">
+                    <img
+                        src="https://media.istockphoto.com/id/1478316046/photo/portrait-of-high-school-teacher-at-school-library.jpg?s=612x612&w=0&k=20&c=sSU4PQgVZXW6jiddn8YcB3s2F_Vge5RekkWBlMiUKuU="
+                        alt="quote" class="quote-image">
+                    <p>“We are BOTH so THANKFUL! I purchased this for my 12 year
+                        old Lab mix as he’s got mobility issues with the back
+                        legs. It’s been 3 weeks and already a difference!”</p>
+                </div>
+
+                <div class="features">
+                    <ul>
+                        <li>Reduce aches & pains with 5-minute sessions.</li>
+                        <hr class="hr-line">
+                        <li>Cold Laser Therapy helps with Pain, Inflammation &
+                            more.</li>
+                        <hr class="hr-line">
+                        <li>Professional Grade LLLT with 5 Laser Diodes.</li>
+                    </ul>
+                </div>
+
+                <div class="price">
+                    <span class="old-price" id="old-price">$369.00</span>
+                    <span class="new-price" id="new-price">$249.00</span>
+                </div>
+
+                <div class="purchase-section">
+                    <button class="cart-button">Add to Cart</button>
+
+                    <div class="quantity-selector">
+                        <button class="decrease" id="decrease">−</button>
+                        <span class="count" id="count">1</span>
+                        <button class="increase" id="increase">+</button>
+                    </div>
+                </div>
+
+                <div class="payment-info">
+                    <div class="payment-icons">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/3/30/Amex_logo.svg"
+                            alt="Amex">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg"
+                            alt="Visa">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                            alt="MasterCard">
+                        <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+                            alt="PayPal">
+                    </div>
+
+                    <div class="info-row">
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/942/942748.png"
+                            alt="Guarantee" class="info-icon">
+                        <p><span class="highlight">30 day money back</span>
+                            guarantee</p>
+                    </div>
+
+                    <div class="info-row">
+                        <img
+                            src="https://cdn-icons-png.flaticon.com/512/891/891419.png"
+                            alt="Delivery" class="info-icon">
+                        <p>Expected <span class="highlight">delivery in
+                                2–4</span> business days</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cart Drawer -->
+        <div class="cart-overlay" id="cartOverlay"></div>
+        <div id="cartDrawer" class="cart-drawer">
+            <div class="cart-header">
+                <h2>Your Cart</h2>
+                <button id="closeDrawer" class="close-btn">✖</button>
+            </div>
+
+            <hr class="divider">
+            <div id="cartItems" class="cart-items">
+
+            </div>
+            <hr class="divider">
+            <div class="cart-footer">
+                <div class="total-price">
+                    <h3>Estimated total</h3>
+                    <p id="totalPrice">$0.00</p>
+                </div>
+                <br>
+
+                <button id="checkoutBtn" class="checkout-btn">Checkout</button>
+            </div>
+        </div>
+    </body>
+</html>
